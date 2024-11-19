@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router";
+import Button from "@material-ui/core/Button";
 
 const MainComponent = () => {
 
@@ -11,9 +12,15 @@ const MainComponent = () => {
 
     return (
         <>
-            <h1>메인 컴포넌트!!!!!!!!</h1>
-            <button onClick={() => navigate("/page1")}>페이지1</button>
-            <button onClick={() => navigate("/page2")}>페이지2</button>
+            <h1>메인 컴포넌트!!!!!!!!</h1>            
+            <Button onClick={() => navigate("/page1")}
+                variant="contained" color="primary"> 
+                페이지1
+            </Button>
+            <Button onClick={() => navigate("/page2")}
+                variant="outlined" color="primary"> 
+                페이지2
+            </Button>
         </>
     )
 }
