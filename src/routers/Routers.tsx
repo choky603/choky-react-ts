@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { Navigate, Route, Routes } from "react-router";
 
 const MainComponenet = lazy(() => import("../components/MainComponent"));
-const TodoList = lazy(() => import("../components/TodoList"));
+const TodoList = lazy(() => import("../components/todo/TodoList"));
 
 
 const Routers = (props: any) => {

@@ -9,10 +9,6 @@ const MainComponent = () => {
 
   const { count, increment, decrement, reset } = useCounterStore();
 
-  // function goPage(path: string) {
-  //     navigate(`/${path}`);
-  // };
-
   return (
     <>
       <h1>메인 컴포넌트!!!!!!!!</h1>
