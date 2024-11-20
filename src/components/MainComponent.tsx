@@ -2,8 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router";
 import { useCounterStore } from "../store/counterStore";
 
-import Button from "@material-ui/core/Button";
-
 const MainComponent = () => {
   const navigate = useNavigate();
 
@@ -12,13 +10,9 @@ const MainComponent = () => {
   return (
     <>
       <h1>메인 컴포넌트!!!!!!!!</h1>
-      <Button
-        onClick={() => navigate("/todoList")}
-        variant="contained"
-        color="primary"
-      >
+      <button onClick={() => navigate("/todoList")}>
         todo-List
-      </Button>
+      </button>
 
       <div style={{ textAlign: "center", marginTop: "20px" }}>
         <h1>Counter</h1>

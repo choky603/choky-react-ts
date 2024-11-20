@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { useTodoStore, Todo } from "../../store/todoStore";
+import { useTodoStore } from "../../store/todoStore";
 import TodoItem from "./TodoItem";
 
 const TodoList = () => {
     const [inputText, setInputText] = useState('');
-    const { todos, addTodo, removeTodo, toggleTodo } = useTodoStore();
+    const { todos, addTodo } = useTodoStore();
 
     const handleAddTodo = () => {
         if (inputText.trim()) {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useTodoStore, Todo } from "../../store/todoStore";
 
 const TodoItem = ({todo}: {todo: Todo}) => {
